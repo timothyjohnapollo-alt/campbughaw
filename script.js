@@ -18,7 +18,7 @@
 const CONFIG = {
   // Your deployed Google Apps Script Web App URL
   // (Looks like: https://script.google.com/macros/s/AKfycb.../exec)
-  GAS_WEBAPP_URL: "https://script.google.com/macros/s/AKfycby0HSBKGdJPw-tzijn4SITrBPGu1F5uroRjJNSJc0bcHLO8s00OAt6tl-GJv6460EhieQ/exec",
+  GAS_WEBAPP_URL: "https://script.google.com/macros/s/AKfycbwJha7YVCDGVt8uVzSiiDtIkjop56PtYPjLklZ7BeGmbds3bbGutO1s0jbY-RwMsFXMYw/exec",
 
   // EmailJS credentials (https://www.emailjs.com)
   EMAILJS_PUBLIC_KEY:        "B8nKSWre_H4OcdPKq",
