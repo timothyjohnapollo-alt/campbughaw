@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Camp Bughaw Philippines — A serene lakeside camping resort. Book your nature retreat today." />
+  <title>Camp Bughaw — Lakeside Camping Resort, Philippines</title>
+
+  <!-- Google Fonts: a distinctive display serif + a refined sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- EmailJS SDK (https://www.emailjs.com/) -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+
+  <!-- ============================= NAVIGATION ============================= -->
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#home" class="brand">
+        <span class="brand-mark" aria-hidden="true">
+          <!-- Inline SVG logo: pine tree silhouette -->
+          <svg viewBox="0 0 32 32" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 3 L9 13 L12 13 L7 21 L11 21 L5 29 L27 29 L21 21 L25 21 L20 13 L23 13 Z"/>
+          </svg>
+        </span>
+        <span class="brand-text">
+          <span class="brand-name">Camp Bughaw</span>
+          <span class="brand-sub">Philippines</span>
+        </span>
+      </a>
+
+      <nav class="nav-links" aria-label="Main">
+        <a href="#about">About</a>
+        <a href="#packages">Stay</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#book">Book</a>
+      </nav>
+
+      <a href="#book" class="btn btn-ghost nav-cta">Reserve</a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============================= HERO ============================= -->
+  <section class="hero" id="home">
+    <!-- Background image layer (replace url with your own photo for a true brand fit) -->
+    <div class="hero-bg" aria-hidden="true">
+      <img src="https://images.unsplash.com/photo-1496545672447-f699b503d270?auto=format&fit=crop&w=2000&q=80" alt="" />
+      <div class="hero-overlay"></div>
+    </div>
+
+    <div class="hero-content">
+      <p class="eyebrow" data-reveal>— Lakeside · Forest · Stillness</p>
+      <h1 class="hero-title" data-reveal>
+        Sleep beneath the <em>bughaw</em> sky.
+      </h1>
+      <p class="hero-sub" data-reveal>
+        A quiet camping resort tucked between pine ridges and a glassy mountain lake — where mornings smell like coffee, woodsmoke, and rain.
+      </p>
+      <div class="hero-actions" data-reveal>
+        <a href="#book" class="btn btn-primary">Book your stay</a>
+        <a href="#packages" class="btn btn-link">Explore stays →</a>
+      </div>
+
+      <!-- Decorative "stat strip" — adds editorial feel -->
+      <div class="hero-strip" data-reveal>
+        <div><strong>1,200m</strong><span>elevation</span></div>
+        <div><strong>18°C</strong><span>avg. night</span></div>
+        <div><strong>5 hrs</strong><span>from Manila</span></div>
+        <div><strong>·</strong><span>open year-round</span></div>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <a href="#about" class="hero-scroll" aria-label="Scroll to about">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- ============================= ABOUT ============================= -->
+  <section class="section about" id="about">
+    <div class="container about-grid">
+      <div class="about-text">
+        <p class="eyebrow">— 01 / The Place</p>
+        <h2 class="section-title">A retreat where the forest does the talking.</h2>
+        <p class="lede">
+          Camp Bughaw sits on a forested ridge overlooking a mirror-still highland lake in the Philippine cordillera.
+          Bughaw — the old Tagalog word for the deep blue of distant mountains and clear sky — is what you’ll see every morning.
+        </p>
+        <p>
+          We keep things intentionally small: a handful of canvas tents, a few hardwood cottages, fire pits, hammocks, and a wood-fired sauna. No televisions, no rush. Just trails, lake water, slow meals, and stars you’d forgotten existed.
+        </p>
+
+        <div class="feature-row">
+          <div class="feature">
+            <span class="feature-icon">◐</span>
+            <h4>Lake access</h4>
+            <p>Private dock with kayaks and paddleboards.</p>
+          </div>
+          <div class="feature">
+            <span class="feature-icon">✦</span>
+            <h4>Dark sky</h4>
+            <p>Among the clearest night skies in Luzon.</p>
+          </div>
+          <div class="feature">
+            <span class="feature-icon">❀</span>
+            <h4>Farm kitchen</h4>
+            <p>Seasonal menu sourced from local growers.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-visual">
+        <div class="about-photo about-photo-1">
+          <img src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?auto=format&fit=crop&w=900&q=80" alt="Canvas tent at sunrise" loading="lazy" />
+        </div>
+        <div class="about-photo about-photo-2">
+          <img src="https://images.unsplash.com/photo-1517824806704-9040b037703b?auto=format&fit=crop&w=700&q=80" alt="Mountain lake reflection" loading="lazy" />
+        </div>
+        <div class="about-badge">
+          <span>Est.</span>
+          <strong>2019</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= PACKAGES ============================= -->
+  <section class="section packages" id="packages">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">— 02 / Where you’ll sleep</p>
+        <h2 class="section-title">Three ways to stay.</h2>
+        <p class="section-sub">All stays include breakfast, a fire pit, and unlimited hot coffee at the lodge.</p>
+      </div>
+
+      <div class="package-grid">
+        <!-- Card 1 -->
+        <article class="pkg-card glass" data-reveal>
+          <div class="pkg-img">
+            <img src="https://images.unsplash.com/photo-1455763916899-e8b50eca9967?auto=format&fit=crop&w=900&q=80" alt="Lakeside canvas tent" loading="lazy" />
+            <span class="pkg-tag">Most popular</span>
+          </div>
+          <div class="pkg-body">
+            <div class="pkg-head">
+              <h3>The Bughaw Tent</h3>
+              <p class="pkg-price">₱3,500<span>/night</span></p>
+            </div>
+            <p class="pkg-desc">A canvas safari tent on a wooden deck, steps from the lake. Real bed, warm linens, lantern light.</p>
+            <ul class="pkg-feats">
+              <li>Sleeps 2</li>
+              <li>Lake view deck</li>
+              <li>Shared bath</li>
+              <li>Breakfast incl.</li>
+            </ul>
+            <a href="#book" class="btn btn-outline" data-pkg="The Bughaw Tent">Book this stay</a>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="pkg-card glass" data-reveal>
+          <div class="pkg-img">
+            <img src="https://images.unsplash.com/photo-1518602164578-cd0074062767?auto=format&fit=crop&w=900&q=80" alt="Wooden forest cottage" loading="lazy" />
+          </div>
+          <div class="pkg-body">
+            <div class="pkg-head">
+              <h3>Pine Ridge Cottage</h3>
+              <p class="pkg-price">₱6,800<span>/night</span></p>
+            </div>
+            <p class="pkg-desc">A hardwood cabin tucked in the pines, with a private veranda, fire pit, and rocking chairs.</p>
+            <ul class="pkg-feats">
+              <li>Sleeps 4</li>
+              <li>Private bath</li>
+              <li>Wood stove</li>
+              <li>Breakfast incl.</li>
+            </ul>
+            <a href="#book" class="btn btn-outline" data-pkg="Pine Ridge Cottage">Book this stay</a>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="pkg-card glass" data-reveal>
+          <div class="pkg-img">
+            <img src="https://images.unsplash.com/photo-1542718610-a1d656d1884c?auto=format&fit=crop&w=900&q=80" alt="Family lodge by the water" loading="lazy" />
+            <span class="pkg-tag pkg-tag-alt">Family</span>
+          </div>
+          <div class="pkg-body">
+            <div class="pkg-head">
+              <h3>The Lakehouse</h3>
+              <p class="pkg-price">₱12,500<span>/night</span></p>
+            </div>
+            <p class="pkg-desc">Our two-bedroom waterfront lodge with a kitchen, dining loft, and dock for swimming.</p>
+            <ul class="pkg-feats">
+              <li>Sleeps 6</li>
+              <li>Full kitchen</li>
+              <li>Private dock</li>
+              <li>Breakfast incl.</li>
+            </ul>
+            <a href="#book" class="btn btn-outline" data-pkg="The Lakehouse">Book this stay</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= GALLERY ============================= -->
+  <section class="section gallery" id="gallery">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">— 03 / Glimpses</p>
+        <h2 class="section-title">From the camp.</h2>
+      </div>
+
+      <div class="gallery-grid">
+        <figure class="g g-1"><img src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?auto=format&fit=crop&w=900&q=80" alt="Tent at sunrise" loading="lazy" /></figure>
+        <figure class="g g-2"><img src="https://images.unsplash.com/photo-1502635385003-ee1e6a1a742d?auto=format&fit=crop&w=900&q=80" alt="Forest path" loading="lazy" /></figure>
+        <figure class="g g-3"><img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=900&q=80" alt="Mountain night sky" loading="lazy" /></figure>
+        <figure class="g g-4"><img src="https://images.unsplash.com/photo-1496080174650-637e3f22fa03?auto=format&fit=crop&w=900&q=80" alt="Hot drink at camp" loading="lazy" /></figure>
+        <figure class="g g-5"><img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=900&q=80" alt="Mountain lake" loading="lazy" /></figure>
+        <figure class="g g-6"><img src="https://images.unsplash.com/photo-1478131143081-80f7f84ca84d?auto=format&fit=crop&w=900&q=80" alt="Campfire at night" loading="lazy" /></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= BOOKING ============================= -->
+  <section class="section booking" id="book">
+    <div class="container booking-wrap">
+      <div class="booking-head">
+        <p class="eyebrow">— 04 / Reserve</p>
+        <h2 class="section-title">Hold your spot by the lake.</h2>
+        <p class="section-sub">We’ll check availability in real-time. A confirmation email is sent the moment we receive your reservation.</p>
+      </div>
+
+      <form class="booking-form glass" id="bookingForm" novalidate>
+        <div class="grid-2">
+          <div class="field">
+            <label for="fullName">Full name</label>
+            <input type="text" id="fullName" name="fullName" required autocomplete="name" placeholder="Juana de la Cruz" />
+            <small class="err" data-err-for="fullName"></small>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required autocomplete="email" placeholder="you@example.com" />
+            <small class="err" data-err-for="email"></small>
+          </div>
+        </div>
+
+        <div class="grid-2">
+          <div class="field">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" required autocomplete="tel" placeholder="+63 9xx xxx xxxx" />
+            <small class="err" data-err-for="phone"></small>
+          </div>
+          <div class="field">
+            <label for="guests">Number of guests</label>
+            <input type="number" id="guests" name="guests" required min="1" max="20" placeholder="2" />
+            <small class="err" data-err-for="guests"></small>
+          </div>
+        </div>
+
+        <div class="grid-2">
+          <div class="field">
+            <label for="checkin">Check-in</label>
+            <input type="date" id="checkin" name="checkin" required />
+            <small class="err" data-err-for="checkin"></small>
+          </div>
+          <div class="field">
+            <label for="checkout">Check-out</label>
+            <input type="date" id="checkout" name="checkout" required />
+            <small class="err" data-err-for="checkout"></small>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="pkg">Package</label>
+          <select id="pkg" name="pkg" required>
+            <option value="">Select a stay</option>
+            <option value="The Bughaw Tent">The Bughaw Tent — ₱3,500/night</option>
+            <option value="Pine Ridge Cottage">Pine Ridge Cottage — ₱6,800/night</option>
+            <option value="The Lakehouse">The Lakehouse — ₱12,500/night</option>
+          </select>
+          <small class="err" data-err-for="pkg"></small>
+        </div>
+
+        <div class="field">
+          <label for="notes">Special requests <span class="optional">(optional)</span></label>
+          <textarea id="notes" name="notes" rows="3" placeholder="Dietary notes, arrival time, celebrations…"></textarea>
+        </div>
+
+        <!-- Availability live message -->
+        <div class="availability" id="availability" aria-live="polite"></div>
+
+        <button type="submit" class="btn btn-primary btn-block" id="submitBtn">
+          <span class="btn-label">Request reservation</span>
+          <span class="spinner" aria-hidden="true"></span>
+        </button>
+
+        <p class="form-note">By booking, you agree to our quiet-hours and pack-it-out policies. We respond within 24 hours.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============================= FOOTER ============================= -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="brand">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 32 32" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 3 L9 13 L12 13 L7 21 L11 21 L5 29 L27 29 L21 21 L25 21 L20 13 L23 13 Z"/>
+            </svg>
+          </span>
+          <span class="brand-text">
+            <span class="brand-name">Camp Bughaw</span>
+            <span class="brand-sub">Philippines</span>
+          </span>
+        </div>
+        <p class="footer-tag">Sleep beneath the bughaw sky.</p>
+      </div>
+      <div>
+        <h5>Visit</h5>
+        <p>Sitio Tinipak, Brgy. Sta. Inez<br/>Cordillera Highlands<br/>Philippines</p>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <p>hello@campbughaw.ph<br/>+63 917 000 0000</p>
+      </div>
+      <div>
+        <h5>Hours</h5>
+        <p>Check-in 2:00 PM<br/>Check-out 11:00 AM<br/>Front desk 7am–9pm</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Camp Bughaw. Made with care in the mountains.</span>
+    </div>
+  </footer>
+
+  <!-- ============================= SUCCESS MODAL ============================= -->
+  <div class="modal" id="successModal" role="dialog" aria-modal="true" aria-labelledby="successTitle" aria-hidden="true">
+    <div class="modal-card glass">
+      <div class="modal-mark">
+        <svg viewBox="0 0 64 64" width="56" height="56" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="32" cy="32" r="28" opacity="0.2"/>
+          <path d="M18 33 L28 43 L46 23"/>
+        </svg>
+      </div>
+      <h3 id="successTitle">Reservation received</h3>
+      <p>Salamat! We’ve saved your booking and sent a confirmation to your email. We’ll be in touch within 24 hours to finalize details.</p>
+      <button class="btn btn-primary" id="closeModal">Beautiful, thank you</button>
+    </div>
+  </div>
+
+  <!-- ============================= ERROR TOAST ============================= -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
