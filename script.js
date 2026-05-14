@@ -27,7 +27,7 @@ const CONFIG = {
   EMAILJS_ADMIN_TEMPLATE:    "template_zymuvci",
 
   // Where admin notifications should go
-  ADMIN_EMAIL: "timothylaurente05@gmail.com",
+  ADMIN_EMAIL: "timothyjohn.apollo@gmail.com",
 };
 
 /* ---------- Init EmailJS once on load ---------- */
