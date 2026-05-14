@@ -18,16 +18,16 @@
 const CONFIG = {
   // Your deployed Google Apps Script Web App URL
   // (Looks like: https://script.google.com/macros/s/AKfycb.../exec)
-  GAS_WEBAPP_URL: "https://script.google.com/macros/s/REPLACE_ME/exec",
+  GAS_WEBAPP_URL: "https://script.google.com/macros/s/AKfycby0HSBKGdJPw-tzijn4SITrBPGu1F5uroRjJNSJc0bcHLO8s00OAt6tl-GJv6460EhieQ/exec",
 
   // EmailJS credentials (https://www.emailjs.com)
-  EMAILJS_PUBLIC_KEY:        "REPLACE_ME_PUBLIC_KEY",
-  EMAILJS_SERVICE_ID:        "REPLACE_ME_SERVICE_ID",
-  EMAILJS_CUSTOMER_TEMPLATE: "REPLACE_ME_CUSTOMER_TEMPLATE_ID",
-  EMAILJS_ADMIN_TEMPLATE:    "REPLACE_ME_ADMIN_TEMPLATE_ID",
+  EMAILJS_PUBLIC_KEY:        "B8nKSWre_H4OcdPKq",
+  EMAILJS_SERVICE_ID:        "service_1ayvfrp",
+  EMAILJS_CUSTOMER_TEMPLATE: "template_qzs7jk1",
+  EMAILJS_ADMIN_TEMPLATE:    "template_zymuvci",
 
   // Where admin notifications should go
-  ADMIN_EMAIL: "hello@campbughaw.ph",
+  ADMIN_EMAIL: "timothylaurente05@gmail.com",
 };
 
 /* ---------- Init EmailJS once on load ---------- */
